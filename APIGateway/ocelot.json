@@ -13,7 +13,7 @@
         }
       ],
       "UpstreamPathTemplate": "/api/map",
-      "UpstreamHttpMethod": [ "GET", "Post" ]
+      "UpstreamHttpMethod": [ "GET" ]
     },
     {
       "DownstreamPathTemplate": "/vehicle",
@@ -25,7 +25,7 @@
         }
       ],
       "UpstreamPathTemplate": "/api/vehicle",
-      "UpstreamHttpMethod": [ "GET", "Post" ]
+      "UpstreamHttpMethod": [ "GET" ]
     },
     {
       "DownstreamPathTemplate": "/price",
@@ -37,7 +37,7 @@
         }
       ],
       "UpstreamPathTemplate": "/api/price",
-      "UpstreamHttpMethod": [ "GET", "Post" ]
+      "UpstreamHttpMethod": [ "GET" ]
     }
 
 
