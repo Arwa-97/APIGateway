@@ -1,0 +1,45 @@
+{
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:7189"
+  },
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/map",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7243
+        }
+      ],
+      "UpstreamPathTemplate": "/api/map",
+      "UpstreamHttpMethod": [ "GET", "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/vehicle",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7273
+        }
+      ],
+      "UpstreamPathTemplate": "/api/vehicle",
+      "UpstreamHttpMethod": [ "GET", "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/price",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7256
+        }
+      ],
+      "UpstreamPathTemplate": "/api/price",
+      "UpstreamHttpMethod": [ "GET", "Post" ]
+    }
+
+
+  ]
+}
